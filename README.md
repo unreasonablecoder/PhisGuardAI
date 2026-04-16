@@ -48,19 +48,16 @@ PhishGuard_Project/
     Git
 
 **2. Installation**
-Bash
-
-# Clone the repository
-git clone https://github.com/unreasonablecoder/PhisGuardAI.git
-
-# Install dependencies
-pip install pandas scikit-learn flask flask-cors joblib
+    Bash
+    
+    git clone https://github.com/unreasonablecoder/PhisGuardAI.git       # Clone the repository
+    pip install pandas scikit-learn flask flask-cors joblib              # Install dependencies
 
 **3. Running the Pipeline**
-Bash
+    Bash
 
-cd 03_Scripts
-python pipeline.py
+    cd 03_Scripts
+    python pipeline.py
 
 This will process the raw data, train the AI model, and generate the Fact/Dimension tables for Power BI.
 
