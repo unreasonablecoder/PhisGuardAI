@@ -8,7 +8,6 @@ This project satisfies the 6th-semester Data Science specialization requirements
 
 # 🛠️ Mandatory Components (7/7 Implemented)
 
-#	Component	Implementation Detail
     1	Data Ingestion:	Automated ingestion of raw URL metadata via Python/Pandas.
     2	Data Storage:	Medallion architecture: Raw (CSV) and Processed (Data Warehouse) storage.
     3	ELT Process:	Automated cleaning, null-handling, and feature engineering.
