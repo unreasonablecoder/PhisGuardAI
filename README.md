@@ -9,13 +9,13 @@ This project satisfies the 6th-semester Data Science specialization requirements
 # 🛠️ Mandatory Components (7/7 Implemented)
 
 #	Component	Implementation Detail
-1	**Data Ingestion:**	Automated ingestion of raw URL metadata via Python/Pandas.
-2	**Data Storage:**	Medallion architecture: Raw (CSV) and Processed (Data Warehouse) storage.
-3	**ELT Process:**	Automated cleaning, null-handling, and feature engineering.
-4	**Data Modeling:**	Star Schema design with Fact (Scans) and Dimension (Result) tables.
-5	**Visualization:**	Interactive Power BI Dashboard for threat monitoring.
-6	**Business Insights:**	Correlation analysis between URL structure and phishing probability.
-7	**End-to-End Pipeline:**	Fully automated workflow from raw input to dashboard refresh.
+    1	Data Ingestion:	Automated ingestion of raw URL metadata via Python/Pandas.
+    2	Data Storage:	Medallion architecture: Raw (CSV) and Processed (Data Warehouse) storage.
+    3	ELT Process:	Automated cleaning, null-handling, and feature engineering.
+    4	Data Modeling:	Star Schema design with Fact (Scans) and Dimension (Result) tables.
+    5	Visualization:	Interactive Power BI Dashboard for threat monitoring.
+    6	Business Insights:	Correlation analysis between URL structure and phishing probability.
+    7	End-to-End Pipeline:	Fully automated workflow from raw input to dashboard refresh.
 
 # 🤖 Machine Learning Features
 
@@ -28,14 +28,20 @@ This project satisfies the 6th-semester Data Science specialization requirements
     Accuracy: ~95-97% (Dataset-dependent).
 
 # 📁 Project Structure
-Plaintext
 
 PhishGuard_Project/
-├── 01_Raw_Data/          # Original Kaggle CSV (phishing_raw.csv)
-├── 02_Processed_Data/    # Modeled Star Schema (Fact_Scans.csv, Dim_Result.csv)
-├── 03_Scripts/           # Python Pipeline (pipeline.py) and Flask API (app.py)
-├── 04_Dashboard/         # Power BI File (.pbix)
-└── README.md
+├── 01_Raw_Data/
+│   └── phishing_raw.csv        # Raw dataset from Kaggle
+├── 02_Processed_Data/
+│   ├── Fact_Scans.csv          # Modeled Fact Table
+│   ├── Dim_Result.csv          # Modeled Dimension Table
+│   └── phishing_model.pkl      # Trained AI Model (Binary)
+├── 03_Scripts/
+│   ├── pipeline.py             # Data Engineering & Training script
+│   └── app.py                  # Flask API for Live Inference
+├── 04_Dashboard/
+│   └── PhishGuard_Report.pbix  # Power BI Dashboard file
+└── README.md                   # Project Documentation
 
 # ⚙️ Setup & Installation
 
