@@ -1,14 +1,18 @@
-# Ignore Python virtual environments
-venv/
+# Python caches
 __pycache__/
 *.pyc
 
-# Ignore the heavy ML model file (re-generate it on Windows)
-*.pkl
+# Virtual Environment
+venv/
+.venv/
 
-# Ignore OS-specific files
+# OS Specific
 .DS_Store
 Thumbs.db
 
-# Ignore Folders
+# Power BI temp files
+*.tmp
+*.zip
+
+# Folders
 college_files/

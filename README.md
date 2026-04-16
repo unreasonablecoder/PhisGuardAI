@@ -1,10 +1,10 @@
 # PhishGuard AI: Enterprise Data Pipeline for Phishing Detection
 
-PhishGuard is an end-to-end AI-driven data engineering pipeline designed to identify and analyze malicious URLs. By combining Python-based Machine Learning with Enterprise Data Engineering principles, the system provides real-time threat intelligence and business-centric security insights.
+PhishGuard is an end-to-end AI-driven data engineering pipeline designed to identify and analyze malicious URLs in batches. By combining Python-based Machine Learning with Enterprise Data Engineering principles, the system provides automated threat intelligence and risk-level categorization for large datasets.
 
 # 🚀 Project Overview
 
-This project satisfies the 6th-semester Data Science specialization requirements by implementing a complete life-cycle of data: from raw ingestion to predictive analytics and visualization.
+This project satisfies the 6th-semester Data Science specialization requirements by implementing a complete life-cycle of data: from raw ingestion to batch predictive analytics and visualization.
 
 # 🛠️ Mandatory Components (7/7 Implemented)
 
@@ -14,7 +14,7 @@ This project satisfies the 6th-semester Data Science specialization requirements
     4	Data Modeling:	Star Schema design with Fact (Scans) and Dimension (Result) tables.
     5	Visualization:	Interactive Power BI Dashboard for threat monitoring.
     6	Business Insights:	Correlation analysis between URL structure and phishing probability.
-    7	End-to-End Pipeline:	Fully automated workflow from raw input to dashboard refresh.
+    7	End-to-End Pipeline:	Fully automated batch workflow from raw input to prediction report.
 
 # 🤖 Machine Learning Features
 
@@ -37,7 +37,6 @@ PhishGuard_Project/
 │   └── phishing_model.pkl      # Trained AI Model (Binary)
 ├── 03_Scripts/
 │   ├── pipeline.py             # Data Engineering & Training script
-│   └── app.py                  # Flask API for Live Inference
 ├── 04_Dashboard/
 │   └── PhishGuard_Report.pbix  # Power BI Dashboard file
 └── README.md                   # Project Documentation
@@ -56,7 +55,7 @@ PhishGuard_Project/
     Bash
     
     git clone https://github.com/unreasonablecoder/PhisGuardAI.git       # Clone the repository
-    pip install pandas scikit-learn flask flask-cors joblib              # Install dependencies
+    pip install pandas scikit-learn joblib              # Install dependencies
 
 **3. Running the Pipeline**
     Bash
