@@ -1,0 +1,11 @@
+# Ignore Python virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# Ignore the heavy ML model file (re-generate it on Windows)
+*.pkl
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
